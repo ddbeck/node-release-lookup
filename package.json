@@ -1,0 +1,34 @@
+{
+  "name": "@ddbeck/node-release-lookup",
+  "version": "0.1.0",
+  "description": "Look up a Node version number from a shorthand (such as \"current\", \"lts\", or \"hydrogen\").",
+  "main": "src/index.mts",
+  "type": "module",
+  "scripts": {
+    "lint": "npx eslint .",
+    "test": "npx tsc --noEmit"
+  },
+  "bin": "src/cli.mts",
+  "author": "Daniel D. Beck <daniel@ddbeck.com> (https://ddbeck.com)",
+  "license": "UNLICENSED",
+  "private": "true",
+  "devDependencies": {
+    "@eslint/js": "^9.26.0",
+    "@tsconfig/strictest": "^2.0.5",
+    "@types/eslint__js": "^8.42.3",
+    "@types/node": "^22.15.17",
+    "@types/semver": "^7.7.0",
+    "@types/yargs": "^17.0.33",
+    "eslint": "^9.26.0",
+    "prettier": "3.5.3",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.32.0"
+  },
+  "dependencies": {
+    "@js-temporal/polyfill": "^0.5.1",
+    "node-fetch": "^3.3.2",
+    "semver": "^7.7.2",
+    "tsx": "^4.19.4",
+    "yargs": "^17.7.2"
+  }
+}
