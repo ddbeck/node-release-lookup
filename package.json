@@ -5,10 +5,11 @@
   "main": "src/index.mts",
   "type": "module",
   "scripts": {
-    "lint": "npx eslint .",
-    "test": "npx tsc --noEmit"
+    "lint": "eslint .",
+    "test": "tsc --noEmit",
+    "prepare": "tsc"
   },
-  "bin": "src/cli.mts",
+  "bin": "dist/cli.mjs",
   "author": "Daniel D. Beck <daniel@ddbeck.com> (https://ddbeck.com)",
   "license": "MIT",
   "devDependencies": {
@@ -20,6 +21,7 @@
     "@types/yargs": "^17.0.33",
     "eslint": "^9.26.0",
     "prettier": "3.5.3",
+    "tsx": "^4.19.4",
     "typescript": "^5.8.3",
     "typescript-eslint": "^8.32.0"
   },
@@ -27,7 +29,6 @@
     "@js-temporal/polyfill": "^0.5.1",
     "node-fetch": "^3.3.2",
     "semver": "^7.7.2",
-    "tsx": "^4.19.4",
     "yargs": "^17.7.2"
   }
 }
