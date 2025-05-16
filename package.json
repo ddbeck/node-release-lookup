@@ -10,7 +10,7 @@
   },
   "bin": "src/cli.mts",
   "author": "Daniel D. Beck <daniel@ddbeck.com> (https://ddbeck.com)",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "private": "true",
   "devDependencies": {
     "@eslint/js": "^9.26.0",
